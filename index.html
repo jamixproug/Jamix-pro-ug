@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JAMIX PRO UG — Music, DJ mixtapes, software, digital tools and entertainment.">
+  <meta name="theme-color" content="#050505">
+  <title>JAMIX PRO UG | Music • Mixtapes • Technology</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="JAMIX PRO UG home">
+    <span class="brand-main">JAMIX<span>PRO</span></span>
+    <span class="brand-sub">UG</span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+  <nav id="mainNav">
+    <a href="#home">Home</a>
+    <a href="#music">Music</a>
+    <a href="#mixtapes">Mixtapes</a>
+    <a href="#software">Software</a>
+    <a href="#about">About</a>
+    <a href="#contact" class="nav-cta">Book JAMIX</a>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="kicker">JAMIX PRO UG</p>
+      <h1>WHERE <span>MUSIC</span><br>MEETS TECHNOLOGY.</h1>
+      <p class="hero-text">
+        Music, DJ mixtapes, software, digital tools and entertainment
+        from <strong>JAMIX DJAY 256</strong> — <strong>MR VIBE</strong>.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#mixtapes">🎧 Listen to Mixtapes</a>
+        <a class="btn btn-ghost" href="#software">Explore Technology</a>
+      </div>
+      <div class="identity">
+        <span>JAMIX DJAY 256</span>
+        <i>DJ • ENTERTAINER</i>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="glow"></div>
+      <div class="portrait-frame">
+        <img src="images/jamix-profile.jpg" alt="JAMIX DJAY 256 portrait">
+      </div>
+      <div class="floating-logo">
+        <img src="images/jk-entertainment-djay.jpg" alt="JK Entertainment DJAY logo">
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="JAMIX platform">
+    <div><strong>DJ</strong><span>Entertainment</span></div>
+    <div><strong>MIX</strong><span>Mixtapes</span></div>
+    <div><strong>TECH</strong><span>Software & Tools</span></div>
+    <div><strong>UG</strong><span>Built in Uganda</span></div>
+  </section>
+
+  <section class="section" id="music">
+    <div class="section-head">
+      <div>
+        <p class="kicker">JAMIX AUDIO HUB</p>
+        <h2>Listen to <span>JAMIX</span></h2>
+      </div>
+      <span class="section-note" id="trackCount">SCANNING MUSIC FOLDER…</span>
+    </div>
+
+    <div class="audio-hero">
+      <div class="audio-cover">
+        <img src="images/jamix-profile.jpg" alt="JAMIX DJAY 256">
+        <div class="cover-badge">JAMIX<br>PRO UG</div>
+      </div>
+      <div class="audio-info">
+        <span class="pill">NOW PLAYING</span>
+        <h3 id="featuredTitle">Ava Peace — Ndi Omu</h3>
+        <p id="featuredArtist">JAMIX PRO UG • Music Hub</p>
+        <div class="featured-controls">
+          <button class="big-play" id="featuredPlay">▶</button>
+          <div class="wave" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="playlist" id="playlist" aria-live="polite">
+      <div class="music-loading" id="musicStatus">Scanning the music folder…</div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="mixtapes">
+    <div class="section-head">
+      <div>
+        <p class="kicker">DJ MIXTAPES</p>
+        <h2>Turn up the <span>Vibe</span></h2>
+      </div>
+    </div>
+
+    <div class="mix-list">
+      <article class="mix-row">
+        <span class="mix-index">01</span>
+        <div class="mix-art">🎧</div>
+        <div class="mix-info">
+          <h3>Best of 2026 Ugandan Music</h3>
+          <p>Mixed & mastered by JAMIX DJAY 256</p>
+        </div>
+        <button class="icon-btn play-btn" data-src="music/latest-mix.mp3" data-title="Best of 2026 Ugandan Music">▶</button>
+        <a class="icon-btn" href="music/latest-mix.mp3" download aria-label="Download mix">↓</a>
+      </article>
+
+      <article class="mix-row">
+        <span class="mix-index">02</span>
+        <div class="mix-art">💚</div>
+        <div class="mix-info">
+          <h3>Lovers Request — Season 1</h3>
+          <p>ALL LOVE MIX • JAMIX DJAY 256</p>
+        </div>
+        <button class="icon-btn">▶</button>
+        <a class="icon-btn" href="#contact">↓</a>
+      </article>
+
+      <article class="mix-row">
+        <span class="mix-index">03</span>
+        <div class="mix-art">🔥</div>
+        <div class="mix-info">
+          <h3>JAMIX Vibes Vol. 1</h3>
+          <p>MR VIBE • DJ • ENTERTAINER</p>
+        </div>
+        <button class="icon-btn">▶</button>
+        <a class="icon-btn" href="#contact">↓</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="software">
+    <div class="section-head">
+      <div>
+        <p class="kicker">DIGITAL HUB</p>
+        <h2>Music meets <span>Technology</span></h2>
+      </div>
+    </div>
+
+    <div class="tech-grid">
+      <article class="tech-card">
+        <div class="tech-icon">🎛️</div>
+        <span class="pill">DJ TOOLS</span>
+        <h3>DJ Software</h3>
+        <p>Useful tools and resources for DJs, producers and music creators.</p>
+        <a href="#contact">Explore →</a>
+      </article>
+
+      <article class="tech-card">
+        <div class="tech-icon">💻</div>
+        <span class="pill">WINDOWS</span>
+        <h3>PC Software</h3>
+        <p>Utilities, creative software and practical digital resources.</p>
+        <a href="#contact">Explore →</a>
+      </article>
+
+      <article class="tech-card">
+        <div class="tech-icon">📱</div>
+        <span class="pill">ANDROID</span>
+        <h3>Mobile Tools</h3>
+        <p>Android apps, utilities and resources for creators on the move.</p>
+        <a href="#contact">Explore →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="about-image">
+      <img src="images/jamix-profile.jpg" alt="JAMIX DJAY 256">
+    </div>
+    <div class="about-copy">
+      <p class="kicker">THE BRAND</p>
+      <h2>Meet <span>JAMIX DJAY 256</span></h2>
+      <p>
+        JAMIX PRO UG is the digital home for JAMIX DJAY 256 — bringing
+        together music, DJ culture, mixtapes, technology and digital
+        entertainment under one recognizable Ugandan brand.
+      </p>
+      <p>
+        <strong>MR VIBE</strong> is the performance identity: music,
+        energy and entertainment built for the crowd.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div>
+      <p class="kicker">BOOKINGS & CONNECTIONS</p>
+      <h2>Let's create the <span>vibe.</span></h2>
+      <p>For bookings, collaborations, music and digital projects.</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn btn-primary" href="https://wa.me/256763873852" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-ghost" href="mailto:jamixproug@gmail.com">Email</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>
+    <div class="brand-main">JAMIX<span>PRO</span> <small>UG</small></div>
+    <p>Music • Technology • Entertainment</p>
+  </div>
+  <div class="socials">
+    <a href="https://www.tiktok.com/@jamixproug1" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://www.instagram.com/jamixprougcr7" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/jamixdjay" target="_blank" rel="noopener">Facebook</a>
+  </div>
+  <p class="copyright">© 2026 JAMIX PRO UG. All rights reserved.</p>
+</footer>
+
+<div class="player" id="player">
+  <div class="player-title">
+    <div class="player-dot">♫</div>
+    <div><strong id="songTitle">Nothing playing</strong><small>JAMIX PRO UG</small></div>
+  </div>
+  <button id="playerBtn" class="player-control">▶</button>
+  <input id="progress" type="range" min="0" max="100" value="0" aria-label="Track progress">
+  <audio id="audio"></audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
